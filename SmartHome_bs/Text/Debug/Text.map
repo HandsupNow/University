@@ -1,0 +1,620 @@
+Archive member included because of file (symbol)
+
+d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_exit.o)
+                              d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5/crtm162.o (exit)
+d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_copy_data.o)
+                              Motor.o (__do_copy_data)
+d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_clear_bss.o)
+                              Text.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+T                   0x1               Text.o
+H                   0x1               Text.o
+
+Discarded input sections
+
+ .bss           0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5/crtm162.o
+ .text          0x00000000        0x0 bell.o
+ .bss           0x00000000        0x0 bell.o
+ .text.Bell_Test
+                0x00000000       0x20 bell.o
+ .text          0x00000000        0x0 dht11.o
+ .bss           0x00000000        0x0 dht11.o
+ .text          0x00000000        0x0 Infrared.o
+ .bss           0x00000000        0x0 Infrared.o
+ .text.Infrared_Test
+                0x00000000       0x18 Infrared.o
+ .text          0x00000000        0x0 LED.o
+ .bss           0x00000000        0x0 LED.o
+ .text.LED_Run  0x00000000       0x44 LED.o
+ .text          0x00000000        0x0 light.o
+ .bss           0x00000000        0x0 light.o
+ .text.Light_Test
+                0x00000000       0x22 light.o
+ .text          0x00000000        0x0 Motor.o
+ .bss           0x00000000        0x0 Motor.o
+ .text          0x00000000        0x0 Text.o
+ .bss           0x00000000        0x0 Text.o
+ .text          0x00000000        0x0 USART.o
+ .bss           0x00000000        0x0 USART.o
+ .text.Usart_PutString
+                0x00000000       0x1e USART.o
+ .text.Usart_Test
+                0x00000000        0xa USART.o
+ .text          0x00000000        0x0 Vibration.o
+ .bss           0x00000000        0x0 Vibration.o
+ .text.Vibration_Test
+                0x00000000        0xa Vibration.o
+ .text          0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_clear_bss.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5/crtm162.o
+LOAD bell.o
+LOAD dht11.o
+LOAD Infrared.o
+LOAD LED.o
+LOAD light.o
+LOAD Motor.o
+LOAD Text.o
+LOAD USART.o
+LOAD Vibration.o
+START GROUP
+LOAD d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5\libm.a
+END GROUP
+LOAD d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a
+LOAD d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5\libc.a
+LOAD d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0x35e
+ *(.vectors)
+ .vectors       0x00000000       0x70 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5/crtm162.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000070                . = ALIGN (0x2)
+                0x00000070                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000070        0x0 linker stubs
+ *(.trampolines*)
+                0x00000070                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000070                __ctors_start = .
+ *(.ctors)
+                0x00000070                __ctors_end = .
+                0x00000070                __dtors_start = .
+ *(.dtors)
+                0x00000070                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000070        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5/crtm162.o
+                0x00000070                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000070        0xc d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5/crtm162.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000007c       0x16 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_copy_data.o)
+                0x0000007c                __do_copy_data
+ .init4         0x00000092       0x10 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_clear_bss.o)
+                0x00000092                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000a2        0x8 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5/crtm162.o
+ *(.init9)
+ *(.text)
+ .text          0x000000aa        0x4 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5/crtm162.o
+                0x000000aa                __vector_22
+                0x000000aa                __vector_1
+                0x000000aa                __vector_24
+                0x000000aa                __vector_12
+                0x000000aa                __bad_interrupt
+                0x000000aa                __vector_6
+                0x000000aa                __vector_3
+                0x000000aa                __vector_23
+                0x000000aa                __vector_25
+                0x000000aa                __vector_11
+                0x000000aa                __vector_13
+                0x000000aa                __vector_17
+                0x000000aa                __vector_19
+                0x000000aa                __vector_7
+                0x000000aa                __vector_27
+                0x000000aa                __vector_5
+                0x000000aa                __vector_4
+                0x000000aa                __vector_9
+                0x000000aa                __vector_2
+                0x000000aa                __vector_21
+                0x000000aa                __vector_15
+                0x000000aa                __vector_8
+                0x000000aa                __vector_26
+                0x000000aa                __vector_14
+                0x000000aa                __vector_10
+                0x000000aa                __vector_16
+                0x000000aa                __vector_18
+                0x000000aa                __vector_20
+                0x000000ae                . = ALIGN (0x2)
+ *(.text.*)
+ .text.Bell_ON  0x000000ae        0xc bell.o
+                0x000000ae                Bell_ON
+ .text.Bell_Init
+                0x000000ba        0xa bell.o
+                0x000000ba                Bell_Init
+ .text.DHT11_Init
+                0x000000c4        0x6 dht11.o
+                0x000000c4                DHT11_Init
+ .text.Read_Com
+                0x000000ca       0x30 dht11.o
+                0x000000ca                Read_Com
+ .text.DHT11_GetValue
+                0x000000fa       0x86 dht11.o
+                0x000000fa                DHT11_GetValue
+ .text.Infrared_Init
+                0x00000180        0x4 Infrared.o
+                0x00000180                Infrared_Init
+ .text.Get_Infrared
+                0x00000184        0x8 Infrared.o
+                0x00000184                Get_Infrared
+ .text.LED_Init
+                0x0000018c        0x6 LED.o
+                0x0000018c                LED_Init
+ .text.LED_ON   0x00000192        0x4 LED.o
+                0x00000192                LED_ON
+ .text.Light_Init
+                0x00000196        0x4 light.o
+                0x00000196                Light_Init
+ .text.Get_Light
+                0x0000019a        0x8 light.o
+                0x0000019a                Get_Light
+ .text.Motor_Init
+                0x000001a2        0x8 Motor.o
+                0x000001a2                Motor_Init
+ .text.Motor_GO
+                0x000001aa       0xa6 Motor.o
+                0x000001aa                Motor_GO
+ .text.contral  0x00000250       0xb0 Text.o
+                0x00000250                contral
+ .text.main     0x00000300       0x26 Text.o
+                0x00000300                main
+ .text.Usart_Init
+                0x00000326       0x16 USART.o
+                0x00000326                Usart_Init
+ .text.Usart_Put
+                0x0000033c        0x8 USART.o
+                0x0000033c                Usart_Put
+ .text.Usart_Get
+                0x00000344        0x8 USART.o
+                0x00000344                Usart_Get
+ .text.Vibration_Init
+                0x0000034c        0x4 Vibration.o
+                0x0000034c                Vibration_Init
+ .text.Get_Vibration
+                0x00000350        0xa Vibration.o
+                0x00000350                Get_Vibration
+                0x0000035a                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000035a        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_exit.o)
+                0x0000035a                _exit
+                0x0000035a                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000035a        0x4 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000035e                _etext = .
+
+.data           0x00800100       0x16 load address 0x0000035e
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5/crtm162.o
+ .data          0x00800100        0x0 bell.o
+ .data          0x00800100        0x0 dht11.o
+ .data          0x00800100        0x0 Infrared.o
+ .data          0x00800100        0x0 LED.o
+ .data          0x00800100        0x0 light.o
+ .data          0x00800100        0x0 Motor.o
+ .data          0x00800100        0x0 Text.o
+ .data          0x00800100        0x0 USART.o
+ .data          0x00800100        0x0 Vibration.o
+ .data          0x00800100        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_exit.o)
+ .data          0x00800100        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800100        0x0 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ .data.table2   0x00800100        0x4 Motor.o
+                0x00800100                table2
+ .data.table1   0x00800104        0x4 Motor.o
+                0x00800104                table1
+ .data.Send     0x00800108        0xd Text.o
+                0x00800108                Send
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800116                . = ALIGN (0x2)
+ *fill*         0x00800115        0x1 
+                0x00800116                _edata = .
+                0x00800116                PROVIDE (__data_end, .)
+
+.bss            0x00800116        0xf
+                0x00800116                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss.data      0x00800116        0xd Text.o
+                0x00800116                data
+ *(COMMON)
+ COMMON         0x00800123        0x2 Text.o
+                0x00800123                T
+                0x00800124                H
+                0x00800125                PROVIDE (__bss_end, .)
+                0x0000035e                __data_load_start = LOADADDR (.data)
+                0x00000374                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800125        0x0
+                0x00800125                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800125                PROVIDE (__noinit_end, .)
+                0x00800125                _end = .
+                0x00800125                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab           0x00000000      0x6cc
+ *(.stab)
+ .stab          0x00000000      0x6cc d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5/crtm162.o
+
+.stabstr        0x00000000       0x97
+ *(.stabstr)
+ .stabstr       0x00000000       0x97 d:/program files/atml/atmel toolchain/avr8 gcc/native/3.4.2.939/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.7.2/../../../../avr/lib/avr5/crtm162.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x2f
+ *(.comment)
+ .comment       0x00000000       0x2f bell.o
+                                 0x30 (size before relaxing)
+ .comment       0x00000000       0x30 dht11.o
+ .comment       0x00000000       0x30 Infrared.o
+ .comment       0x00000000       0x30 LED.o
+ .comment       0x00000000       0x30 light.o
+ .comment       0x00000000       0x30 Motor.o
+ .comment       0x00000000       0x30 Text.o
+ .comment       0x00000000       0x30 USART.o
+ .comment       0x00000000       0x30 Vibration.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x1b0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x30 bell.o
+ .debug_aranges
+                0x00000030       0x30 dht11.o
+ .debug_aranges
+                0x00000060       0x30 Infrared.o
+ .debug_aranges
+                0x00000090       0x30 LED.o
+ .debug_aranges
+                0x000000c0       0x30 light.o
+ .debug_aranges
+                0x000000f0       0x28 Motor.o
+ .debug_aranges
+                0x00000118       0x28 Text.o
+ .debug_aranges
+                0x00000140       0x40 USART.o
+ .debug_aranges
+                0x00000180       0x30 Vibration.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000      0xf5d
+ *(.debug_info)
+ .debug_info    0x00000000      0x19f bell.o
+ .debug_info    0x0000019f      0x337 dht11.o
+ .debug_info    0x000004d6       0xf4 Infrared.o
+ .debug_info    0x000005ca      0x189 LED.o
+ .debug_info    0x00000753      0x124 light.o
+ .debug_info    0x00000877      0x1e1 Motor.o
+ .debug_info    0x00000a58      0x2f6 Text.o
+ .debug_info    0x00000d4e      0x12a USART.o
+ .debug_info    0x00000e78       0xe5 Vibration.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x971
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x11d bell.o
+ .debug_abbrev  0x0000011d      0x17c dht11.o
+ .debug_abbrev  0x00000299       0xcc Infrared.o
+ .debug_abbrev  0x00000365      0x137 LED.o
+ .debug_abbrev  0x0000049c       0xdf light.o
+ .debug_abbrev  0x0000057b      0x131 Motor.o
+ .debug_abbrev  0x000006ac      0x132 Text.o
+ .debug_abbrev  0x000007de       0xe9 USART.o
+ .debug_abbrev  0x000008c7       0xaa Vibration.o
+
+.debug_line     0x00000000      0xbdd
+ *(.debug_line)
+ .debug_line    0x00000000      0x18c bell.o
+ .debug_line    0x0000018c      0x1f5 dht11.o
+ .debug_line    0x00000381       0xf9 Infrared.o
+ .debug_line    0x0000047a      0x199 LED.o
+ .debug_line    0x00000613      0x102 light.o
+ .debug_line    0x00000715      0x1d4 Motor.o
+ .debug_line    0x000008e9       0xe1 Text.o
+ .debug_line    0x000009ca      0x119 USART.o
+ .debug_line    0x00000ae3       0xfa Vibration.o
+
+.debug_frame    0x00000000      0x2b8
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x44 bell.o
+ .debug_frame   0x00000044       0x58 dht11.o
+ .debug_frame   0x0000009c       0x44 Infrared.o
+ .debug_frame   0x000000e0       0x58 LED.o
+ .debug_frame   0x00000138       0x44 light.o
+ .debug_frame   0x0000017c       0x40 Motor.o
+ .debug_frame   0x000001bc       0x48 Text.o
+ .debug_frame   0x00000204       0x70 USART.o
+ .debug_frame   0x00000274       0x44 Vibration.o
+
+.debug_str      0x00000000      0x2b9
+ *(.debug_str)
+ .debug_str     0x00000000       0xfc bell.o
+                                0x130 (size before relaxing)
+ .debug_str     0x000000fc       0x55 dht11.o
+                                0x158 (size before relaxing)
+ .debug_str     0x00000151       0x40 Infrared.o
+                                 0xe7 (size before relaxing)
+ .debug_str     0x00000191       0x1c LED.o
+                                0x126 (size before relaxing)
+ .debug_str     0x000001ad       0x2d light.o
+                                 0xe3 (size before relaxing)
+ .debug_str     0x000001da       0x38 Motor.o
+                                0x13b (size before relaxing)
+ .debug_str     0x00000212       0x5f Text.o
+                                0x18c (size before relaxing)
+ .debug_str     0x00000271       0x28 USART.o
+                                 0xf3 (size before relaxing)
+ .debug_str     0x00000299       0x20 Vibration.o
+                                 0xf3 (size before relaxing)
+
+.debug_loc      0x00000000      0x4cf
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x25f dht11.o
+ .debug_loc     0x0000025f       0x6d LED.o
+ .debug_loc     0x000002cc      0x143 Motor.o
+ .debug_loc     0x0000040f       0x69 Text.o
+ .debug_loc     0x00000478       0x57 USART.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x120
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x20 bell.o
+ .debug_ranges  0x00000020       0x20 dht11.o
+ .debug_ranges  0x00000040       0x20 Infrared.o
+ .debug_ranges  0x00000060       0x20 LED.o
+ .debug_ranges  0x00000080       0x20 light.o
+ .debug_ranges  0x000000a0       0x18 Motor.o
+ .debug_ranges  0x000000b8       0x18 Text.o
+ .debug_ranges  0x000000d0       0x30 USART.o
+ .debug_ranges  0x00000100       0x20 Vibration.o
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(Text.elf elf32-avr)
+LOAD linker stubs

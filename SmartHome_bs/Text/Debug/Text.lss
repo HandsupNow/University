@@ -1,0 +1,888 @@
+
+Text.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000016  00800100  0000035e  000003f2  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000035e  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          0000000f  00800116  00800116  00000408  2**0
+                  ALLOC
+  3 .stab         000006cc  00000000  00000000  00000408  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  4 .stabstr      00000097  00000000  00000000  00000ad4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .comment      0000002f  00000000  00000000  00000b6b  2**0
+                  CONTENTS, READONLY
+  6 .debug_aranges 000001b0  00000000  00000000  00000b9a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_info   00000f5d  00000000  00000000  00000d4a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_abbrev 00000971  00000000  00000000  00001ca7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_line   00000bdd  00000000  00000000  00002618  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_frame  000002b8  00000000  00000000  000031f8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_str    000002b9  00000000  00000000  000034b0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_loc    000004cf  00000000  00000000  00003769  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_ranges 00000120  00000000  00000000  00003c38  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 38 00 	jmp	0x70	; 0x70 <__ctors_end>
+   4:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+   8:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+   c:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  10:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  14:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  18:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  1c:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  20:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  24:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  28:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  2c:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  30:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  34:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  38:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  3c:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  40:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  44:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  48:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  4c:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  50:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  54:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  58:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  5c:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  60:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  64:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  68:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+  6c:	0c 94 55 00 	jmp	0xaa	; 0xaa <__bad_interrupt>
+
+00000070 <__ctors_end>:
+  70:	11 24       	eor	r1, r1
+  72:	1f be       	out	0x3f, r1	; 63
+  74:	cf ef       	ldi	r28, 0xFF	; 255
+  76:	d4 e0       	ldi	r29, 0x04	; 4
+  78:	de bf       	out	0x3e, r29	; 62
+  7a:	cd bf       	out	0x3d, r28	; 61
+
+0000007c <__do_copy_data>:
+  7c:	11 e0       	ldi	r17, 0x01	; 1
+  7e:	a0 e0       	ldi	r26, 0x00	; 0
+  80:	b1 e0       	ldi	r27, 0x01	; 1
+  82:	ee e5       	ldi	r30, 0x5E	; 94
+  84:	f3 e0       	ldi	r31, 0x03	; 3
+  86:	02 c0       	rjmp	.+4      	; 0x8c <__do_copy_data+0x10>
+  88:	05 90       	lpm	r0, Z+
+  8a:	0d 92       	st	X+, r0
+  8c:	a6 31       	cpi	r26, 0x16	; 22
+  8e:	b1 07       	cpc	r27, r17
+  90:	d9 f7       	brne	.-10     	; 0x88 <__do_copy_data+0xc>
+
+00000092 <__do_clear_bss>:
+  92:	21 e0       	ldi	r18, 0x01	; 1
+  94:	a6 e1       	ldi	r26, 0x16	; 22
+  96:	b1 e0       	ldi	r27, 0x01	; 1
+  98:	01 c0       	rjmp	.+2      	; 0x9c <.do_clear_bss_start>
+
+0000009a <.do_clear_bss_loop>:
+  9a:	1d 92       	st	X+, r1
+
+0000009c <.do_clear_bss_start>:
+  9c:	a5 32       	cpi	r26, 0x25	; 37
+  9e:	b2 07       	cpc	r27, r18
+  a0:	e1 f7       	brne	.-8      	; 0x9a <.do_clear_bss_loop>
+  a2:	0e 94 80 01 	call	0x300	; 0x300 <main>
+  a6:	0c 94 ad 01 	jmp	0x35a	; 0x35a <_exit>
+
+000000aa <__bad_interrupt>:
+  aa:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000ae <Bell_ON>:
+	Bell_ON(0);               //关闭蜂鸣器
+}
+
+void Bell_ON(unsigned char bell)
+{
+	if (bell == 0)   //参数为0关闭蜂鸣器
+  ae:	81 11       	cpse	r24, r1
+  b0:	02 c0       	rjmp	.+4      	; 0xb6 <Bell_ON+0x8>
+	{
+		PORTD &=~(_BV(3));
+  b2:	93 98       	cbi	0x12, 3	; 18
+  b4:	08 95       	ret
+	}
+	else
+	{
+		PORTD |=_BV(3);
+  b6:	93 9a       	sbi	0x12, 3	; 18
+  b8:	08 95       	ret
+
+000000ba <Bell_Init>:
+#include "bell.h"
+
+
+void Bell_Init(void)
+{
+	DDRD |=_BV(3);  //设置为输出模式
+  ba:	8b 9a       	sbi	0x11, 3	; 17
+	Bell_ON(0);               //关闭蜂鸣器
+  bc:	80 e0       	ldi	r24, 0x00	; 0
+  be:	0e 94 57 00 	call	0xae	; 0xae <Bell_ON>
+  c2:	08 95       	ret
+
+000000c4 <DHT11_Init>:
+#include <util/delay.h>
+#include "dht11.h"
+/******初始化DHT11数据总线******/
+void DHT11_Init(void)
+{
+	DDRB |= _BV(PB0);//PB0配置为输出模式
+  c4:	b8 9a       	sbi	0x17, 0	; 23
+	PORTB |= _BV(PB0);//PB0输出高电平
+  c6:	c0 9a       	sbi	0x18, 0	; 24
+  c8:	08 95       	ret
+
+000000ca <Read_Com>:
+	return 0;//说明器件正确
+	
+}
+//***读取一个字节的数据***/
+unsigned char Read_Com(void)
+{
+  ca:	28 e0       	ldi	r18, 0x08	; 8
+	unsigned char value=0;
+  cc:	80 e0       	ldi	r24, 0x00	; 0
+	unsigned char i=0;//记录时间
+	unsigned char j;
+	for (j=0;j<8;j++)
+	{
+		while(!(PINB&1<<PB0));//检测上升沿
+		while(PINB&1<<PB0)//检测是否出现下降沿，记录高电平
+  ce:	30 e0       	ldi	r19, 0x00	; 0
+	unsigned char value=0;
+	unsigned char i=0;//记录时间
+	unsigned char j;
+	for (j=0;j<8;j++)
+	{
+		while(!(PINB&1<<PB0));//检测上升沿
+  d0:	b0 9b       	sbis	0x16, 0	; 22
+  d2:	fe cf       	rjmp	.-4      	; 0xd0 <Read_Com+0x6>
+		while(PINB&1<<PB0)//检测是否出现下降沿，记录高电平
+  d4:	b0 9b       	sbis	0x16, 0	; 22
+  d6:	0a c0       	rjmp	.+20     	; 0xec <Read_Com+0x22>
+  d8:	93 2f       	mov	r25, r19
+		{
+			i++;
+  da:	9f 5f       	subi	r25, 0xFF	; 255
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  dc:	42 e0       	ldi	r20, 0x02	; 2
+  de:	4a 95       	dec	r20
+  e0:	f1 f7       	brne	.-4      	; 0xde <Read_Com+0x14>
+  e2:	00 c0       	rjmp	.+0      	; 0xe4 <Read_Com+0x1a>
+	unsigned char i=0;//记录时间
+	unsigned char j;
+	for (j=0;j<8;j++)
+	{
+		while(!(PINB&1<<PB0));//检测上升沿
+		while(PINB&1<<PB0)//检测是否出现下降沿，记录高电平
+  e4:	b0 99       	sbic	0x16, 0	; 22
+  e6:	f9 cf       	rjmp	.-14     	; 0xda <Read_Com+0x10>
+		{
+			i++;
+			_delay_us(1);
+		}
+		if(i<30)//说明传输的数据为0
+  e8:	9e 31       	cpi	r25, 0x1E	; 30
+  ea:	10 f4       	brcc	.+4      	; 0xf0 <Read_Com+0x26>
+		value = value<<1;
+  ec:	88 0f       	add	r24, r24
+  ee:	02 c0       	rjmp	.+4      	; 0xf4 <Read_Com+0x2a>
+		else//说明传输的数据位1
+		value = (value<<1) |0x01;
+  f0:	88 0f       	add	r24, r24
+  f2:	81 60       	ori	r24, 0x01	; 1
+  f4:	21 50       	subi	r18, 0x01	; 1
+unsigned char Read_Com(void)
+{
+	unsigned char value=0;
+	unsigned char i=0;//记录时间
+	unsigned char j;
+	for (j=0;j<8;j++)
+  f6:	61 f7       	brne	.-40     	; 0xd0 <Read_Com+0x6>
+		value = (value<<1) |0x01;
+		i=0;//初始化i变量
+	}
+	return value;
+	
+  f8:	08 95       	ret
+
+000000fa <DHT11_GetValue>:
+
+/****************************************
+函数功能：获取DHT11所有数据
+*****************************************/
+unsigned char DHT11_GetValue(unsigned char* HumH,unsigned char* TempH)
+{
+  fa:	0f 93       	push	r16
+  fc:	1f 93       	push	r17
+  fe:	cf 93       	push	r28
+ 100:	df 93       	push	r29
+ 102:	8c 01       	movw	r16, r24
+ 104:	eb 01       	movw	r28, r22
+	unsigned char temp;//存放校验的数据
+	unsigned char i=0;//循环判断高电平持续时间
+	DDRB |= _BV(PB0);//PB0配置为输出模式
+ 106:	b8 9a       	sbi	0x17, 0	; 23
+	PORTB |= _BV(PB0);//PB0输出高电平
+ 108:	c0 9a       	sbi	0x18, 0	; 24
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 10a:	8f e0       	ldi	r24, 0x0F	; 15
+ 10c:	97 e2       	ldi	r25, 0x27	; 39
+ 10e:	01 97       	sbiw	r24, 0x01	; 1
+ 110:	f1 f7       	brne	.-4      	; 0x10e <DHT11_GetValue+0x14>
+ 112:	00 c0       	rjmp	.+0      	; 0x114 <DHT11_GetValue+0x1a>
+ 114:	00 00       	nop
+	_delay_ms(5);//确保通信数据线为高电平
+	PORTB &= ~_BV(PB0);//拉低PB0管脚
+ 116:	c0 98       	cbi	0x18, 0	; 24
+ 118:	ef e3       	ldi	r30, 0x3F	; 63
+ 11a:	fc e9       	ldi	r31, 0x9C	; 156
+ 11c:	31 97       	sbiw	r30, 0x01	; 1
+ 11e:	f1 f7       	brne	.-4      	; 0x11c <DHT11_GetValue+0x22>
+ 120:	00 c0       	rjmp	.+0      	; 0x122 <DHT11_GetValue+0x28>
+ 122:	00 00       	nop
+	_delay_ms(20);//拉低信号线20ms使得DHT11能检验到起始位
+	PORTB |= _BV(PB0);//拉高PB0管脚
+ 124:	c0 9a       	sbi	0x18, 0	; 24
+	DDRB &= ~_BV(PB0);//配置PB0为输入模式用于检测接下来DHT11的数据
+ 126:	b8 98       	cbi	0x17, 0	; 23
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 128:	f5 e2       	ldi	r31, 0x25	; 37
+ 12a:	fa 95       	dec	r31
+ 12c:	f1 f7       	brne	.-4      	; 0x12a <DHT11_GetValue+0x30>
+ 12e:	00 00       	nop
+	_delay_us(14);
+	while((!(PINB&1<<PB0))&&(i<150))//检测是否有上升沿的产生
+ 130:	b0 99       	sbic	0x16, 0	; 22
+ 132:	1e c0       	rjmp	.+60     	; 0x170 <DHT11_GetValue+0x76>
+函数功能：获取DHT11所有数据
+*****************************************/
+unsigned char DHT11_GetValue(unsigned char* HumH,unsigned char* TempH)
+{
+	unsigned char temp;//存放校验的数据
+	unsigned char i=0;//循环判断高电平持续时间
+ 134:	80 e0       	ldi	r24, 0x00	; 0
+	PORTB |= _BV(PB0);//拉高PB0管脚
+	DDRB &= ~_BV(PB0);//配置PB0为输入模式用于检测接下来DHT11的数据
+	_delay_us(14);
+	while((!(PINB&1<<PB0))&&(i<150))//检测是否有上升沿的产生
+	{
+		i++;
+ 136:	8f 5f       	subi	r24, 0xFF	; 255
+ 138:	92 e0       	ldi	r25, 0x02	; 2
+ 13a:	9a 95       	dec	r25
+ 13c:	f1 f7       	brne	.-4      	; 0x13a <DHT11_GetValue+0x40>
+ 13e:	00 c0       	rjmp	.+0      	; 0x140 <DHT11_GetValue+0x46>
+	PORTB &= ~_BV(PB0);//拉低PB0管脚
+	_delay_ms(20);//拉低信号线20ms使得DHT11能检验到起始位
+	PORTB |= _BV(PB0);//拉高PB0管脚
+	DDRB &= ~_BV(PB0);//配置PB0为输入模式用于检测接下来DHT11的数据
+	_delay_us(14);
+	while((!(PINB&1<<PB0))&&(i<150))//检测是否有上升沿的产生
+ 140:	b0 99       	sbic	0x16, 0	; 22
+ 142:	03 c0       	rjmp	.+6      	; 0x14a <DHT11_GetValue+0x50>
+ 144:	86 39       	cpi	r24, 0x96	; 150
+ 146:	b9 f7       	brne	.-18     	; 0x136 <DHT11_GetValue+0x3c>
+ 148:	02 c0       	rjmp	.+4      	; 0x14e <DHT11_GetValue+0x54>
+	{
+		i++;
+		_delay_us(1);
+	}
+	if(i<40) return 1;//说明器件不存在或有问题
+ 14a:	88 32       	cpi	r24, 0x28	; 40
+ 14c:	98 f0       	brcs	.+38     	; 0x174 <DHT11_GetValue+0x7a>
+	while(PINB&1<<PB0);//检测是否有下降沿的产生
+ 14e:	b0 99       	sbic	0x16, 0	; 22
+ 150:	fe cf       	rjmp	.-4      	; 0x14e <DHT11_GetValue+0x54>
+	*HumH = Read_Com();//读取湿度整数部分
+ 152:	0e 94 65 00 	call	0xca	; 0xca <Read_Com>
+ 156:	f8 01       	movw	r30, r16
+ 158:	80 83       	st	Z, r24
+	temp = Read_Com();//读取湿度小数部分
+ 15a:	0e 94 65 00 	call	0xca	; 0xca <Read_Com>
+	*TempH = Read_Com();//读取温度整数部分
+ 15e:	0e 94 65 00 	call	0xca	; 0xca <Read_Com>
+ 162:	88 83       	st	Y, r24
+	temp = Read_Com();//读取温度小数部分
+ 164:	0e 94 65 00 	call	0xca	; 0xca <Read_Com>
+	temp = Read_Com();//读取校验
+ 168:	0e 94 65 00 	call	0xca	; 0xca <Read_Com>
+	return 0;//说明器件正确
+ 16c:	80 e0       	ldi	r24, 0x00	; 0
+ 16e:	03 c0       	rjmp	.+6      	; 0x176 <DHT11_GetValue+0x7c>
+	while((!(PINB&1<<PB0))&&(i<150))//检测是否有上升沿的产生
+	{
+		i++;
+		_delay_us(1);
+	}
+	if(i<40) return 1;//说明器件不存在或有问题
+ 170:	81 e0       	ldi	r24, 0x01	; 1
+ 172:	01 c0       	rjmp	.+2      	; 0x176 <DHT11_GetValue+0x7c>
+ 174:	81 e0       	ldi	r24, 0x01	; 1
+	*TempH = Read_Com();//读取温度整数部分
+	temp = Read_Com();//读取温度小数部分
+	temp = Read_Com();//读取校验
+	return 0;//说明器件正确
+	
+}
+ 176:	df 91       	pop	r29
+ 178:	cf 91       	pop	r28
+ 17a:	1f 91       	pop	r17
+ 17c:	0f 91       	pop	r16
+ 17e:	08 95       	ret
+
+00000180 <Infrared_Init>:
+
+#include "Infrared.h"
+
+void Infrared_Init()
+{
+	DDRB &=~_BV(4);
+ 180:	bc 98       	cbi	0x17, 4	; 23
+ 182:	08 95       	ret
+
+00000184 <Get_Infrared>:
+}
+unsigned char Get_Infrared(void)
+{
+	if(PINB &_BV(4))
+ 184:	86 b3       	in	r24, 0x16	; 22
+	}
+	else
+	{
+		return 0;
+	}
+}
+ 186:	82 95       	swap	r24
+ 188:	81 70       	andi	r24, 0x01	; 1
+ 18a:	08 95       	ret
+
+0000018c <LED_Init>:
+
+#include "LED.h"
+
+void LED_Init(void)
+{
+	DDRA =0xff;   //对小灯初始化，PA端口设置为输出模式
+ 18c:	8f ef       	ldi	r24, 0xFF	; 255
+ 18e:	8a bb       	out	0x1a, r24	; 26
+ 190:	08 95       	ret
+
+00000192 <LED_ON>:
+}
+
+void LED_ON(unsigned char led)    
+{
+	PORTA = led;
+ 192:	8b bb       	out	0x1b, r24	; 27
+ 194:	08 95       	ret
+
+00000196 <Light_Init>:
+#include "light.h"
+
+
+void Light_Init(void)
+{
+	DDRB &= ~_BV(1); //&写0时输出
+ 196:	b9 98       	cbi	0x17, 1	; 23
+ 198:	08 95       	ret
+
+0000019a <Get_Light>:
+}
+
+unsigned char Get_Light(void)
+{
+	if (PINB & _BV(1))   //输入的数据存入PIN寄存器
+ 19a:	86 b3       	in	r24, 0x16	; 22
+	}
+	else
+	{
+		return 0;
+	}
+}
+ 19c:	86 95       	lsr	r24
+ 19e:	81 70       	andi	r24, 0x01	; 1
+ 1a0:	08 95       	ret
+
+000001a2 <Motor_Init>:
+unsigned char table1[4]={0x30,0x60,0xc0,0x90};
+unsigned char table2[4]={0x30,0x90,0xc0,0x60};
+
+void Motor_Init(void)
+{
+	DDRD|=0xf0;  //设置PD高四位为输出模式
+ 1a2:	81 b3       	in	r24, 0x11	; 17
+ 1a4:	80 6f       	ori	r24, 0xF0	; 240
+ 1a6:	81 bb       	out	0x11, r24	; 17
+ 1a8:	08 95       	ret
+
+000001aa <Motor_GO>:
+}
+
+
+
+void Motor_GO(int num)
+{
+ 1aa:	cf 93       	push	r28
+ 1ac:	df 93       	push	r29
+	int i,j;
+	
+		if (num>0)
+ 1ae:	18 16       	cp	r1, r24
+ 1b0:	19 06       	cpc	r1, r25
+ 1b2:	d4 f0       	brlt	.+52     	; 0x1e8 <Motor_GO+0x3e>
+ 1b4:	21 c0       	rjmp	.+66     	; 0x1f8 <Motor_GO+0x4e>
+		{
+			for (j=0;j<num;j++)
+			{
+				for (i=0;i<4;i++)//产生4次不同的脉冲
+				{
+					PORTD |=table1[i];//产生脉冲，设置高电平
+ 1b6:	d2 b3       	in	r29, 0x12	; 18
+	DDRD|=0xf0;  //设置PD高四位为输出模式
+}
+
+
+
+void Motor_GO(int num)
+ 1b8:	df 01       	movw	r26, r30
+		{
+			for (j=0;j<num;j++)
+			{
+				for (i=0;i<4;i++)//产生4次不同的脉冲
+				{
+					PORTD |=table1[i];//产生脉冲，设置高电平
+ 1ba:	c1 91       	ld	r28, Z+
+ 1bc:	cd 2b       	or	r28, r29
+ 1be:	c2 bb       	out	0x12, r28	; 18
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 1c0:	cf e3       	ldi	r28, 0x3F	; 63
+ 1c2:	df e1       	ldi	r29, 0x1F	; 31
+ 1c4:	21 97       	sbiw	r28, 0x01	; 1
+ 1c6:	f1 f7       	brne	.-4      	; 0x1c4 <Motor_GO+0x1a>
+ 1c8:	00 c0       	rjmp	.+0      	; 0x1ca <Motor_GO+0x20>
+ 1ca:	00 00       	nop
+					_delay_ms(4);
+					PORTD &=~table1[i];//产生脉冲，清零高电平
+ 1cc:	c2 b3       	in	r28, 0x12	; 18
+ 1ce:	ac 91       	ld	r26, X
+ 1d0:	a0 95       	com	r26
+ 1d2:	ac 23       	and	r26, r28
+ 1d4:	a2 bb       	out	0x12, r26	; 18
+	
+		if (num>0)
+		{
+			for (j=0;j<num;j++)
+			{
+				for (i=0;i<4;i++)//产生4次不同的脉冲
+ 1d6:	e2 17       	cp	r30, r18
+ 1d8:	f3 07       	cpc	r31, r19
+ 1da:	69 f7       	brne	.-38     	; 0x1b6 <Motor_GO+0xc>
+{
+	int i,j;
+	
+		if (num>0)
+		{
+			for (j=0;j<num;j++)
+ 1dc:	4f 5f       	subi	r20, 0xFF	; 255
+ 1de:	5f 4f       	sbci	r21, 0xFF	; 255
+ 1e0:	48 17       	cp	r20, r24
+ 1e2:	59 07       	cpc	r21, r25
+ 1e4:	39 f4       	brne	.+14     	; 0x1f4 <Motor_GO+0x4a>
+ 1e6:	31 c0       	rjmp	.+98     	; 0x24a <Motor_GO+0xa0>
+
+void Motor_GO(int num)
+{
+	int i,j;
+	
+		if (num>0)
+ 1e8:	40 e0       	ldi	r20, 0x00	; 0
+ 1ea:	50 e0       	ldi	r21, 0x00	; 0
+ 1ec:	64 e0       	ldi	r22, 0x04	; 4
+ 1ee:	71 e0       	ldi	r23, 0x01	; 1
+	DDRD|=0xf0;  //设置PD高四位为输出模式
+}
+
+
+
+void Motor_GO(int num)
+ 1f0:	28 e0       	ldi	r18, 0x08	; 8
+ 1f2:	31 e0       	ldi	r19, 0x01	; 1
+ 1f4:	fb 01       	movw	r30, r22
+ 1f6:	df cf       	rjmp	.-66     	; 0x1b6 <Motor_GO+0xc>
+					PORTD &=~table1[i];//产生脉冲，清零高电平
+				}
+			}
+		}else
+		{
+			num=-num;
+ 1f8:	44 27       	eor	r20, r20
+ 1fa:	55 27       	eor	r21, r21
+ 1fc:	48 1b       	sub	r20, r24
+ 1fe:	59 0b       	sbc	r21, r25
+			for (j=0;j<num;j++)//产生4次不同的脉冲
+ 200:	14 16       	cp	r1, r20
+ 202:	15 06       	cpc	r1, r21
+ 204:	d4 f0       	brlt	.+52     	; 0x23a <Motor_GO+0x90>
+ 206:	21 c0       	rjmp	.+66     	; 0x24a <Motor_GO+0xa0>
+			{
+				for (i=0;i<4;i++)
+				{
+					PORTD |=table2[i];//产生脉冲，设置高电平
+ 208:	d2 b3       	in	r29, 0x12	; 18
+	DDRD|=0xf0;  //设置PD高四位为输出模式
+}
+
+
+
+void Motor_GO(int num)
+ 20a:	df 01       	movw	r26, r30
+			num=-num;
+			for (j=0;j<num;j++)//产生4次不同的脉冲
+			{
+				for (i=0;i<4;i++)
+				{
+					PORTD |=table2[i];//产生脉冲，设置高电平
+ 20c:	c1 91       	ld	r28, Z+
+ 20e:	cd 2b       	or	r28, r29
+ 210:	c2 bb       	out	0x12, r28	; 18
+ 212:	cf e3       	ldi	r28, 0x3F	; 63
+ 214:	df e1       	ldi	r29, 0x1F	; 31
+ 216:	21 97       	sbiw	r28, 0x01	; 1
+ 218:	f1 f7       	brne	.-4      	; 0x216 <Motor_GO+0x6c>
+ 21a:	00 c0       	rjmp	.+0      	; 0x21c <Motor_GO+0x72>
+ 21c:	00 00       	nop
+					_delay_ms(4);
+					PORTD &=~table2[i];
+ 21e:	c2 b3       	in	r28, 0x12	; 18
+ 220:	ac 91       	ld	r26, X
+ 222:	a0 95       	com	r26
+ 224:	ac 23       	and	r26, r28
+ 226:	a2 bb       	out	0x12, r26	; 18
+		}else
+		{
+			num=-num;
+			for (j=0;j<num;j++)//产生4次不同的脉冲
+			{
+				for (i=0;i<4;i++)
+ 228:	e8 17       	cp	r30, r24
+ 22a:	f9 07       	cpc	r31, r25
+ 22c:	69 f7       	brne	.-38     	; 0x208 <Motor_GO+0x5e>
+				}
+			}
+		}else
+		{
+			num=-num;
+			for (j=0;j<num;j++)//产生4次不同的脉冲
+ 22e:	2f 5f       	subi	r18, 0xFF	; 255
+ 230:	3f 4f       	sbci	r19, 0xFF	; 255
+ 232:	24 17       	cp	r18, r20
+ 234:	35 07       	cpc	r19, r21
+ 236:	39 f4       	brne	.+14     	; 0x246 <Motor_GO+0x9c>
+ 238:	08 c0       	rjmp	.+16     	; 0x24a <Motor_GO+0xa0>
+ 23a:	20 e0       	ldi	r18, 0x00	; 0
+ 23c:	30 e0       	ldi	r19, 0x00	; 0
+ 23e:	60 e0       	ldi	r22, 0x00	; 0
+ 240:	71 e0       	ldi	r23, 0x01	; 1
+	DDRD|=0xf0;  //设置PD高四位为输出模式
+}
+
+
+
+void Motor_GO(int num)
+ 242:	84 e0       	ldi	r24, 0x04	; 4
+ 244:	91 e0       	ldi	r25, 0x01	; 1
+ 246:	fb 01       	movw	r30, r22
+ 248:	df cf       	rjmp	.-66     	; 0x208 <Motor_GO+0x5e>
+					_delay_ms(4);
+					PORTD &=~table2[i];
+				}
+			}
+		}
+}
+ 24a:	df 91       	pop	r29
+ 24c:	cf 91       	pop	r28
+ 24e:	08 95       	ret
+
+00000250 <contral>:
+	//Usart_Put('C');
+	//Usart_Put('\n');
+    }
+}
+void contral(void)
+{
+ 250:	0f 93       	push	r16
+ 252:	1f 93       	push	r17
+ 254:	cf 93       	push	r28
+ 256:	df 93       	push	r29
+	int i;
+	if(Usart_Get() == 0xef)
+ 258:	0e 94 a2 01 	call	0x344	; 0x344 <Usart_Get>
+ 25c:	8f 3e       	cpi	r24, 0xEF	; 239
+ 25e:	09 f0       	breq	.+2      	; 0x262 <contral+0x12>
+ 260:	4a c0       	rjmp	.+148    	; 0x2f6 <contral+0xa6>
+	{
+		data[0]= 0xef;
+ 262:	80 93 16 01 	sts	0x0116, r24
+		if (Usart_Get() == 0xef)
+ 266:	0e 94 a2 01 	call	0x344	; 0x344 <Usart_Get>
+ 26a:	8f 3e       	cpi	r24, 0xEF	; 239
+ 26c:	09 f0       	breq	.+2      	; 0x270 <contral+0x20>
+ 26e:	43 c0       	rjmp	.+134    	; 0x2f6 <contral+0xa6>
+		{
+			data[1] = 0xef;
+ 270:	80 93 17 01 	sts	0x0117, r24
+			if (Usart_Get()==0x0d)
+ 274:	0e 94 a2 01 	call	0x344	; 0x344 <Usart_Get>
+ 278:	8d 30       	cpi	r24, 0x0D	; 13
+ 27a:	e9 f5       	brne	.+122    	; 0x2f6 <contral+0xa6>
+			{
+				data[2] = 0x0D;
+ 27c:	80 93 18 01 	sts	0x0118, r24
+ 280:	c9 e1       	ldi	r28, 0x19	; 25
+ 282:	d1 e0       	ldi	r29, 0x01	; 1
+	//Usart_Put(T%10+0x30);
+	//Usart_Put('C');
+	//Usart_Put('\n');
+    }
+}
+void contral(void)
+ 284:	03 e2       	ldi	r16, 0x23	; 35
+ 286:	11 e0       	ldi	r17, 0x01	; 1
+			if (Usart_Get()==0x0d)
+			{
+				data[2] = 0x0D;
+				for (i=3;i<13;i++)
+				{
+					data[i]=Usart_Get();
+ 288:	0e 94 a2 01 	call	0x344	; 0x344 <Usart_Get>
+ 28c:	89 93       	st	Y+, r24
+		{
+			data[1] = 0xef;
+			if (Usart_Get()==0x0d)
+			{
+				data[2] = 0x0D;
+				for (i=3;i<13;i++)
+ 28e:	c0 17       	cp	r28, r16
+ 290:	d1 07       	cpc	r29, r17
+ 292:	d1 f7       	brne	.-12     	; 0x288 <contral+0x38>
+				{
+					data[i]=Usart_Get();
+				}
+				Bell_ON(data[3]);
+ 294:	80 91 19 01 	lds	r24, 0x0119
+ 298:	0e 94 57 00 	call	0xae	; 0xae <Bell_ON>
+				Motor_GO(data[4]);
+ 29c:	80 91 1a 01 	lds	r24, 0x011A
+ 2a0:	90 e0       	ldi	r25, 0x00	; 0
+ 2a2:	0e 94 d5 00 	call	0x1aa	; 0x1aa <Motor_GO>
+				LED_ON(data[5]);
+ 2a6:	80 91 1b 01 	lds	r24, 0x011B
+ 2aa:	0e 94 c9 00 	call	0x192	; 0x192 <LED_ON>
+				DHT11_GetValue(&H,&T);
+ 2ae:	63 e2       	ldi	r22, 0x23	; 35
+ 2b0:	71 e0       	ldi	r23, 0x01	; 1
+ 2b2:	84 e2       	ldi	r24, 0x24	; 36
+ 2b4:	91 e0       	ldi	r25, 0x01	; 1
+ 2b6:	0e 94 7d 00 	call	0xfa	; 0xfa <DHT11_GetValue>
+				Send[3] = H;
+ 2ba:	80 91 24 01 	lds	r24, 0x0124
+ 2be:	80 93 0b 01 	sts	0x010B, r24
+				Send[4] = T;
+ 2c2:	80 91 23 01 	lds	r24, 0x0123
+ 2c6:	80 93 0c 01 	sts	0x010C, r24
+				Send[5] = Get_Light();
+ 2ca:	0e 94 cd 00 	call	0x19a	; 0x19a <Get_Light>
+ 2ce:	80 93 0d 01 	sts	0x010D, r24
+				Send[6] = Get_Infrared();
+ 2d2:	0e 94 c2 00 	call	0x184	; 0x184 <Get_Infrared>
+ 2d6:	80 93 0e 01 	sts	0x010E, r24
+				Send[7] = Get_Vibration();
+ 2da:	0e 94 a8 01 	call	0x350	; 0x350 <Get_Vibration>
+ 2de:	80 93 0f 01 	sts	0x010F, r24
+ 2e2:	c8 e0       	ldi	r28, 0x08	; 8
+ 2e4:	d1 e0       	ldi	r29, 0x01	; 1
+	//Usart_Put(T%10+0x30);
+	//Usart_Put('C');
+	//Usart_Put('\n');
+    }
+}
+void contral(void)
+ 2e6:	05 e1       	ldi	r16, 0x15	; 21
+ 2e8:	11 e0       	ldi	r17, 0x01	; 1
+				Send[5] = Get_Light();
+				Send[6] = Get_Infrared();
+				Send[7] = Get_Vibration();
+				for (i=0;i<13;i++)
+				{
+					Usart_Put(Send[i]);
+ 2ea:	89 91       	ld	r24, Y+
+ 2ec:	0e 94 9e 01 	call	0x33c	; 0x33c <Usart_Put>
+				Send[3] = H;
+				Send[4] = T;
+				Send[5] = Get_Light();
+				Send[6] = Get_Infrared();
+				Send[7] = Get_Vibration();
+				for (i=0;i<13;i++)
+ 2f0:	c0 17       	cp	r28, r16
+ 2f2:	d1 07       	cpc	r29, r17
+ 2f4:	d1 f7       	brne	.-12     	; 0x2ea <contral+0x9a>
+					Usart_Put(Send[i]);
+				}
+			}
+		}
+	}
+}
+ 2f6:	df 91       	pop	r29
+ 2f8:	cf 91       	pop	r28
+ 2fa:	1f 91       	pop	r17
+ 2fc:	0f 91       	pop	r16
+ 2fe:	08 95       	ret
+
+00000300 <main>:
+int main(void)
+{
+	//char *s="hello world\n";
+	unsigned char H,T;
+	
+	LED_Init();
+ 300:	0e 94 c6 00 	call	0x18c	; 0x18c <LED_Init>
+	Usart_Init();
+ 304:	0e 94 93 01 	call	0x326	; 0x326 <Usart_Init>
+	Bell_Init();//串口初始化
+ 308:	0e 94 5d 00 	call	0xba	; 0xba <Bell_Init>
+	Light_Init();
+ 30c:	0e 94 cb 00 	call	0x196	; 0x196 <Light_Init>
+	Vibration_Init();
+ 310:	0e 94 a6 01 	call	0x34c	; 0x34c <Vibration_Init>
+	Infrared_Init();
+ 314:	0e 94 c0 00 	call	0x180	; 0x180 <Infrared_Init>
+	//test();
+	Motor_Init();
+ 318:	0e 94 d1 00 	call	0x1a2	; 0x1a2 <Motor_Init>
+	//Motor_GO(512);
+	//_delay_ms(200);
+	//Motor_GO(-512);
+	DHT11_Init();
+ 31c:	0e 94 62 00 	call	0xc4	; 0xc4 <DHT11_Init>
+	
+	
+	while(1)
+    {
+		//LED_ON(0xff);
+		contral();
+ 320:	0e 94 28 01 	call	0x250	; 0x250 <contral>
+ 324:	fd cf       	rjmp	.-6      	; 0x320 <main+0x20>
+
+00000326 <Usart_Init>:
+#include "usart.h"
+void Usart_Init(void){
+	UCSR0A = 0;
+ 326:	1b b8       	out	0x0b, r1	; 11
+	UCSR0B |=_BV(3) |_BV(4);   //�����ͺͽ���
+ 328:	8a b1       	in	r24, 0x0a	; 10
+ 32a:	88 61       	ori	r24, 0x18	; 24
+ 32c:	8a b9       	out	0x0a, r24	; 10
+	UCSR0C |=_BV(1) |_BV(2);
+ 32e:	80 b5       	in	r24, 0x20	; 32
+ 330:	86 60       	ori	r24, 0x06	; 6
+ 332:	80 bd       	out	0x20, r24	; 32
+	UBRR0H =0;
+ 334:	10 bc       	out	0x20, r1	; 32
+	UBRR0L =8;
+ 336:	88 e0       	ldi	r24, 0x08	; 8
+ 338:	89 b9       	out	0x09, r24	; 9
+ 33a:	08 95       	ret
+
+0000033c <Usart_Put>:
+	}//���ڵĳ�ʼ��
+void Usart_Put(char c){
+	while(!(UCSR0A&(1<<UDRE0)));       //UDREΪ1ʱ��������Ϊ�գ����Խ����µ����� UCSR0A 0010 0000
+ 33c:	5d 9b       	sbis	0x0b, 5	; 11
+ 33e:	fe cf       	rjmp	.-4      	; 0x33c <Usart_Put>
+	UDR0 = c;                   //UDREΪ0���ɽ����µ�����    &   1101 1111
+ 340:	8c b9       	out	0x0c, r24	; 12
+ 342:	08 95       	ret
+
+00000344 <Usart_Get>:
+	}//���ڷ��ͺ���
+char Usart_Get(void)            //RXCΪ1ʱ����������δ���������ݲ��ܽ����µ�����
+{
+	while(!(UCSR0A & (1<<RXC0)));
+ 344:	5f 9b       	sbis	0x0b, 7	; 11
+ 346:	fe cf       	rjmp	.-4      	; 0x344 <Usart_Get>
+	return UDR0;
+ 348:	8c b1       	in	r24, 0x0c	; 12
+	}//���ڽ��պ���
+ 34a:	08 95       	ret
+
+0000034c <Vibration_Init>:
+
+#include "Vibration.h"
+
+void Vibration_Init(void)
+{
+	DDRD &=~(_BV(2));
+ 34c:	8a 98       	cbi	0x11, 2	; 17
+ 34e:	08 95       	ret
+
+00000350 <Get_Vibration>:
+}
+
+unsigned char Get_Vibration(void)
+{
+	if(PIND &_BV(2))
+ 350:	80 b3       	in	r24, 0x10	; 16
+	}
+	else
+	{
+		return 0;
+	}
+}
+ 352:	82 fb       	bst	r24, 2
+ 354:	88 27       	eor	r24, r24
+ 356:	80 f9       	bld	r24, 0
+ 358:	08 95       	ret
+
+0000035a <_exit>:
+ 35a:	f8 94       	cli
+
+0000035c <__stop_program>:
+ 35c:	ff cf       	rjmp	.-2      	; 0x35c <__stop_program>
